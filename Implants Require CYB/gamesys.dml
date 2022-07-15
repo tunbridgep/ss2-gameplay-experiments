@@ -1,0 +1,83 @@
+DML1
+
+//Add CYB Requirements for each implant
++ObjProp -101 "ReqStatsDesc" //BrawnBoost
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 3
+}
+
++ObjProp -102 "ReqStatsDesc" //EndurBoost
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 3
+}
+
++ObjProp -103 "ReqStatsDesc" //SwiftBoost
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 4
+}
+
++ObjProp -969 "ReqStatsDesc" //LabAssistant
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 3
+}
+
++ObjProp -1661 "ReqStatsDesc" //ExperTech
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 4
+}
+
++ObjProp -106 "ReqStatsDesc" //WormBlood
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 6
+}
+
++ObjProp -762 "ReqStatsDesc" //WormBlend
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 5
+}
+
++ObjProp -1334 "ReqStatsDesc" //WormHeart
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 6
+}
+
++ObjProp -1660 "ReqStatsDesc" //WormMind
+{
+	"STR" 0
+	"END" 0
+	"PSI" 0
+	"AGI" 0
+	"CYB" 5
+}

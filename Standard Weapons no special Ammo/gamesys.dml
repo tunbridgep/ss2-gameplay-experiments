@@ -1,0 +1,16 @@
+DML1
+
+//Create a new metaprop to attach an ammo replacement script to
+CreateArch "Misc Metaprops" "Non-Standard Ammo Replacer"
+
++ObjProp "Non-Standard Ammo Replacer" "Scripts"
+{
+	"Script 0" "sargeReplaceRounds"
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" false
+}
+
++MetaProp -307 "Non-Standard Ammo Replacer"
++MetaProp -32 "Non-Standard Ammo Replacer"
