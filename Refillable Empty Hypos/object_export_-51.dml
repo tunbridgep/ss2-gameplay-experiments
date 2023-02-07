@@ -1,0 +1,110 @@
+DML1
+
+// Object Export of "Patches (-51)"
+
+// Note: Reverse links are not exported. Links, receptrons, stims and metaproperties are exported with '++',
+//       which will cause duplicates if the DML is used on an already populated object.
+
+
+// Engine Features->Stack Count
++ObjProp "Patches" "StackCount"
+{
+	"" 1
+}
+
+// Position
++ObjProp "Patches" "Position"
+{
+	"Location" 0.00, 0.00, 0.00
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+
+// Physics->Model->Type
++ObjProp "Patches" "PhysType"
+{
+	"Type" "Sphere"
+	"# Submodels" 1
+	"Remove on Sleep" FALSE
+	"Special" FALSE
+}
+
+// Obj->Cursor->Inv Cursor String
++ObjProp "Patches" "InvCursor" = "patches: "Use to apply""
+
+// Obj->Recycle Value
++ObjProp "Patches" "Recycle"
+{
+	"" 2
+}
+
+// Obj->InvDims
++ObjProp "Patches" "InvDims"
+{
+	"Width" 1
+	"Height" 1
+}
+
+// Psi->Radar Type
++ObjProp "Patches" "PsiRadar"
+{
+	"" "Powerup"
+}
+
+// Psi->Alchemy Val
++ObjProp "Patches" "Alchemy"
+{
+	"" 4.00
+}
+
+// Psi->Fabricate Quantity
++ObjProp "Patches" "Fabricate"
+{
+	"" 1
+}
+
+// Psi->Fabricate Cost
++ObjProp "Patches" "FabCost"
+{
+	"" 20
+}
+
+// Physics->Model->Attributes
++ObjProp "Patches" "PhysAttr"
+{
+	"Gravity %" 100.00
+	"Mass" 30.00
+	"Density" 1.00
+	"Elasticity" 1.00
+	"Base Friction" 0.00
+	"COG Offset" 0.00, 0.00, 0.00
+	"Climbable Sides" "[None]"
+	"Flags" "[None]"
+	"Rotation Axes" "X Axis, Y Axis, Z Axis"
+	"Rest Axes" "+Y Axis, -Y Axis"
+}
+
+// Physics->Model->Dimensions
++ObjProp "Patches" "PhysDims"
+{
+	"Size" 0.00, 0.00, 0.00
+	"Radius 1" 0.14
+	"Radius 2" 0.00
+	"Offset 1" 0.00, 0.00, 0.00
+	"Offset 2" 0.00, 0.00, 0.00
+	"Point vs Terrain" FALSE
+	"Point vs Not Special" FALSE
+}
+
+// Schema->Class Tags
++ObjProp "Patches" "Class Tags"
+{
+	"1: Tags" "DeviceType Hypo"
+}
+
+// Schema->Material Tags
++ObjProp "Patches" "Material Tags"
+{
+	"1: Tags" "Material Glass"
+}

@@ -7,7 +7,7 @@ DML1
 	"END" 0
 	"PSI" 0
 	"AGI" 0
-	"CYB" 3
+	"CYB" 2
 }
 
 +ObjProp -102 "ReqStatsDesc" //EndurBoost
@@ -25,7 +25,7 @@ DML1
 	"END" 0
 	"PSI" 0
 	"AGI" 0
-	"CYB" 4
+	"CYB" 3
 }
 
 +ObjProp -969 "ReqStatsDesc" //LabAssistant

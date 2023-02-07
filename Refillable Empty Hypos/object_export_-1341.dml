@@ -1,0 +1,140 @@
+DML1
+
+// Object Export of "Anti-Annelid Toxin (-1341)"
+
+// Note: Reverse links are not exported. Links, receptrons, stims and metaproperties are exported with '++',
+//       which will cause duplicates if the DML is used on an already populated object.
+
+
+// Player->Research Report
++ObjProp "Anti-Annelid Toxin" "RsrchRep"
+{
+	"" "Anti Annelid Toxin"
+}
+
+// Shape->Model Name
++ObjProp "Anti-Annelid Toxin" "ModelName"
+{
+	"" "filter"
+}
+
+// Position
++ObjProp "Anti-Annelid Toxin" "Position"
+{
+	"Location" 0.00, 0.00, 0.00
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+
+// Scripts
++ObjProp "Anti-Annelid Toxin" "Scripts"
+{
+	"Script 0" "ResearchableScript"
+	"Script 1" "ToolConsumable"
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" TRUE
+}
+
+// Engine Features->FrobInfo
++ObjProp "Anti-Annelid Toxin" "FrobInfo"
+{
+	"World Action" "Move"
+	"Inv Action" "Script"
+	"Tool Action" "Script"
+}
+
+// Physics->Model->Type
++ObjProp "Anti-Annelid Toxin" "PhysType"
+{
+	"Type" "Sphere"
+	"# Submodels" 1
+	"Remove on Sleep" FALSE
+	"Special" FALSE
+}
+
+// Obj->Object name
++ObjProp "Anti-Annelid Toxin" "ObjName" = "AAT: "A vial of bubbling liquid.""
+
+// Obj->Object short name
++ObjProp "Anti-Annelid Toxin" "ObjShort" = "AAT: "Vial of liquid""
+
+// Obj->Object Look string
++ObjProp "Anti-Annelid Toxin" "ObjLookS" = "AntiAnnelid_Toxin: "Summary:  Placing this toxin in an environmental regulator will reduce local annelid growth.
+
+Analysis:  This is an experimental toxin, highly virulent, developed specifically to break down and dissolve annelid tissue.  The canister is highly pressurized, as the liquid toxin would evaporate quickly under ordinary conditions.
+
+Recommendation:  For maximum coverage, this toxin should be introduced into air-recirculators immediately after being opened.""
+
+// Obj->Object icon
++ObjProp "Anti-Annelid Toxin" "ObjIcon"
+{
+	"" "icn_tox"
+}
+
+// Gamesys->Research Time
++ObjProp "Anti-Annelid Toxin" "RsrchTime"
+{
+	"" 600
+}
+
+// Gamesys->Research Text
++ObjProp "Anti-Annelid Toxin" "RsrchTxt" = "AATText: "This experimental toxin could yield information on human-annelid interfacing.  Chemicals needed to research: Sb (2), V""
+
+// Gamesys->Chemicals Needed
++ObjProp "Anti-Annelid Toxin" "ChemNeeded"
+{
+	"1 - Item" "Chem #4"
+	"1 - Time" 30
+	"2 - Item" "Chem #2"
+	"2 - Time" 60
+	"3 - Item" "Chem #4"
+	"3 - Time" 240
+	"4 - Item" ""
+	"4 - Time" 0
+	"5 - Item" ""
+	"5 - Time" 0
+	"6 - Item" ""
+	"6 - Time" 0
+	"7 - Item" ""
+	"7 - Time" 0
+}
+
+// Script->QB Name
++ObjProp "Anti-Annelid Toxin" "QBName" = "Note_3_2"
+
+// Script->QB Val
++ObjProp "Anti-Annelid Toxin" "QBVal"
+{
+	"" 2
+}
+
+// Physics->Model->Attributes
++ObjProp "Anti-Annelid Toxin" "PhysAttr"
+{
+	"Gravity %" 100.00
+	"Mass" 50.00
+	"Density" 1.00
+	"Elasticity" 1.00
+	"Base Friction" 0.00
+	"COG Offset" 0.00, 0.00, 0.00
+	"Climbable Sides" "[None]"
+	"Flags" "[None]"
+	"Rotation Axes" "X Axis, Y Axis, Z Axis"
+	"Rest Axes" "+X Axis, +Y Axis, +Z Axis, -X Axis, -Y Axis, -Z Axis"
+}
+
+// Physics->Model->Dimensions
++ObjProp "Anti-Annelid Toxin" "PhysDims"
+{
+	"Size" 0.00, 0.00, 0.00
+	"Radius 1" 1.05
+	"Radius 2" 0.00
+	"Offset 1" 0.00, 0.00, 0.00
+	"Offset 2" 0.00, 0.00, 0.00
+	"Point vs Terrain" FALSE
+	"Point vs Not Special" FALSE
+}
+
+++MetaProp "Anti-Annelid Toxin" "MatGlass"

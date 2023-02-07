@@ -1,0 +1,124 @@
+//Add "Serum Canister" object
+//CreateArch -1341 "Serum Canister"
+CreateArch -218 "Serum Canister"
+{
+	//Require Californium as it's otherwise only used for the Grub thingies
+	+ObjProp "ChemNeeded"
+	{
+		"1 - Item" "Chem #7"
+		"1 - Time" 30
+	}
+	
+	+ObjProp "PhysAttr"
+	{
+		"Gravity %" 100.00
+		"Mass" 50.00
+		"Density" 1.00
+		"Elasticity" 1.00
+		"Base Friction" 0.00
+		"COG Offset" 0.00, 0.00, 0.00
+		"Climbable Sides" "[None]"
+		"Flags" "[None]"
+		"Rotation Axes" "X Axis, Y Axis, Z Axis"
+		"Rest Axes" "+X Axis, +Y Axis, +Z Axis, -X Axis, -Y Axis, -Z Axis"
+	}
+
+	+ObjProp "PhysDims"
+	{
+		"Size" 0.00, 0.00, 0.00
+		"Radius 1" 1.05
+		"Radius 2" 0.00
+		"Offset 1" 0.00, 0.00, 0.00
+		"Offset 2" 0.00, 0.00, 0.00
+		"Point vs Terrain" FALSE
+		"Point vs Not Special" FALSE
+	}
+	
+	+ObjProp "RsrchTime"
+	{
+		"" 60
+	}
+	
+	+ObjProp "RsrchRep"
+	{
+		"" "Serum Canister" //Doesn't work
+	}
+	
+	/*
+	+ObjProp "StackCount"
+    {
+        "" 3
+    }
+	*/
+	
+	+ObjProp "Recycle"
+    {
+        "" 0
+    }
+	
+    +ObjProp "Alchemy"
+    {
+        "" 0
+    }
+}
+
++MetaProp "Serum Canister" "MatGlass"
+
+//Add "Empty Hypo" item
+//CreateArch -90 "Empty Hypo"
+//CreateArch -51 "Empty Hypo"
+CreateArch -70 "Empty Hypo"
+{
+    +ObjProp "ObjName" = "Empty_Hypo: "Empty Hypo""
+    +ObjProp "ObjShort" = "Empty_Hypo: "Empty Hypo""
+	+ObjProp "InvCursor" = "Empty_Hypo_Tooltip: "Drop on a serum canister to refill""
+	
+    +ObjProp "ObjIcon"
+    {
+        "" "apatche"
+    }
+	
+    +ObjProp "CombineType"
+    {
+        "" "EmptyHypo"
+    }
+	
+	+ObjProp "StackCount"
+    {
+        "" 1
+    }
+	
+	+ObjProp "Recycle"
+    {
+        "" 0
+    }
+	
+    +ObjProp "Alchemy"
+    {
+        "" 0
+    }
+	
+	+ObjProp "ModelName"
+	{
+	"" "EmptyHypo"
+	}
+	
+	+ObjProp "Scripts"
+	{
+		"Script 0" "sargeEmptyHypo"
+		"Don't inherit" false
+	}
+}
+
+//Add recycler script to all hypos
+CreateArch "Misc Metaprops" "Hypo Recycling"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" "sargeHypoRecycler"
+		"Don't inherit" false
+	}
+}
+
++MetaProp -52 "Hypo Recycling" //Med Hypo
++MetaProp -57 "Hypo Recycling" //PSI Hypo

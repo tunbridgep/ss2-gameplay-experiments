@@ -1,0 +1,101 @@
+DML1
+
+// Object Export of "EmptyHypo (-5093)"
+
+// Note: Reverse links are not exported. Links, receptrons, stims and metaproperties are exported with '++',
+//       which will cause duplicates if the DML is used on an already populated object.
+
+
+// Engine Features->Combine Type
++ObjProp "EmptyHypo" "CombineType"
+{
+	"" "emptyhypoo"
+}
+
+// Engine Features->Stack Count
++ObjProp "EmptyHypo" "StackCount"
+{
+	"" 1
+}
+
+// Shape->Scale
++ObjProp "EmptyHypo" "Scale"
+{
+	"" 0.70, 0.70, 0.70
+}
+
+// Shape->Model Name
++ObjProp "EmptyHypo" "ModelName"
+{
+	"" "EmptyHypo"
+}
+
+// Scripts
++ObjProp "EmptyHypo" "Scripts"
+{
+	"Script 0" ""
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" FALSE
+}
+
+// Engine Features->FrobInfo
++ObjProp "EmptyHypo" "FrobInfo"
+{
+	"World Action" "Move"
+	"Inv Action" "Script, Tool Cursor"
+	"Tool Action" "Script"
+}
+
+// Obj->Object name
++ObjProp "EmptyHypo" "ObjName" = "emptyhypo"
+
+// Obj->Object short name
++ObjProp "EmptyHypo" "ObjShort" = "emptyhypo"
+
+// Obj->Object icon
++ObjProp "EmptyHypo" "ObjIcon"
+{
+	"" "apatche"
+}
+
+// Script->Objlist Arg
++ObjProp "EmptyHypo" "ObjList" = "NVAssemblyPart1=arach. organ; NVAssembledItem1=HalfSpiderPatch; NVAssemblyPart2=Chem #17; NVAssembledItem2=halfradpatch; NVAssemblyPart3=Chem #14; NVAssembledItem3=dissolver; NVAssemblyPart4=Chem #13; NVAssembledItem4=speed boost; NVAssemblyPart5=annelid_medpatch; NVAssembledItem5=healax; NVAssemblyPart6=annelid_psipatch; NVAssembledItem6=psiax; NVAssemblyPart7=Chem #18; NVAssembledItem7=toxpatch; NVAssembly1Trait=15; NVAssembly2Trait=15; NVAssembly3Trait=15; NVAssembly4Trait=15; NVAssembly5Trait=15; NVAssembly6Trait=15; NVAssembly7Trait=15; "
+
+// Obj->Recycle Value
++ObjProp "EmptyHypo" "Recycle"
+{
+	"" 1
+}
+
+// Obj->InvDims
++ObjProp "EmptyHypo" "InvDims"
+{
+	"Width" 1
+	"Height" 1
+}
+
+// Psi->Alchemy Val
++ObjProp "EmptyHypo" "Alchemy"
+{
+	"" 1.00
+}
+
+// Psi->Fabricate Quantity
++ObjProp "EmptyHypo" "Fabricate"
+{
+	"" 1
+}
+
+// Psi->Fabricate Cost
++ObjProp "EmptyHypo" "FabCost"
+{
+	"" 10
+}
+
+// Renderer->Transparency (alpha)
++ObjProp "EmptyHypo" "RenderAlpha"
+{
+	"" 1.00
+}

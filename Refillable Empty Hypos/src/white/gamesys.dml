@@ -1,0 +1,26 @@
+//For Psi Hypos
+CreateArch "Serum Canister" "White Serum Canister"
+{
+	+ObjProp "ObjName" = "Hypo_Refill_White: "A vial of psionic serum.""
+
+	+ObjProp "ObjShort" = "Hypo_Refill_WhiteS: "Vial of Psi Serum""
+	
+	+ObjProp "RsrchTxt" = "Hypo_Refill_WhiteR: "This serum could yield information on creation of hypos.       Chemicals needed to research: Cf""
+	
+	+ObjProp "ObjLookS" = "Hypo_Refill_WhiteL: "This Psionic Serum can be used to refill empty hypos. Officially a trade secret, this was never meant to fall into the hands of anyone outside of the TriOp manufacturing division""
+	
+	+ObjProp  "ObjIcon"
+	{
+		"" "icn_rflw"
+	}
+	
+	+ObjProp "ModelName"
+	{
+		"" "SERUM_W"
+	}
+	
+	+ObjProp "CombineType"
+    {
+        "" "WhiteSerumCanister"
+    }
+}

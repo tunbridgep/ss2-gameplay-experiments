@@ -1,0 +1,15 @@
+Idea 1: "Secmod Style"
+
+- Using a hypo adds an empty hypo, chance based on Cyb
+- Refillable via annelid healing/psi glands
+	- Glands are usable, but crappy by themselves
+
+Idea 2: "Dark Souls Style"
+
+- Most hypos in the game removed.
+- Occasionally find "empty hypos"
+- Using a hypo gives you an empty hypo
+- Around the station there are various "Healing stations" which let you refill your hypos with either healing serum or mind serum.
+	- Healing stations break after X uses, determined by Cyb
+	- Hacking gives you an extra 2-3 uses.
+- Psi Boosters are unaffected

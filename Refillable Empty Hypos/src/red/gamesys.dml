@@ -1,0 +1,26 @@
+//For Med Hypos
+CreateArch "Serum Canister" "Red Serum Canister"
+{
+	+ObjProp "ObjName" = "Hypo_Refill_Red: "A vial of red healing serum.""
+
+	+ObjProp "ObjShort" = "Hypo_Refill_RedS: "Vial of healing serum""
+	
+	+ObjProp "RsrchTxt" = "Hypo_Refill_RedR: "This serum could yield information on creation of hypos.       Chemicals needed to research: Cf""
+	
+	+ObjProp "ObjLookS" = "Hypo_Refill_RedL: "This medical serum can be used to refill empty hypos. Originally sold as a cure-all, this was later patented in order to allow a monopoly on hypos, which are known to generate over 500% more revenue per year""
+	
+	+ObjProp  "ObjIcon"
+	{
+		"" "icn_rflr"
+	}
+	
+	+ObjProp "ModelName"
+	{
+		"" "SERUM_R"
+	}
+	
+	+ObjProp "CombineType"
+    {
+        "" "RedSerumCanister"
+    }
+}
