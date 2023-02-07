@@ -22,7 +22,10 @@ class sargeHypoRecycler extends SqRootScript
 		//local tinker = ShockGame.HasTrait("Player", eTrait.kTraitTinker);
 		local tinker = true;
 		
-		if (stackCount != newStackCount && tinker)
+		local playerCYB = ShockGame.GetStat("Player",eStats.kStatCyber);
+		local roll = Data.RandInt(0,8-playerCYB);
+		
+		if (stackCount != newStackCount && tinker && roll == 0)
 		{
 			local obj = Object.Create("Empty Hypo");
 			ShockGame.AddInvObj(obj);

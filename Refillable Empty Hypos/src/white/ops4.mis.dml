@@ -1,0 +1,11 @@
+//Adds a white serum to the armoury
+Create "White Serum Canister"
+{
+    +ObjProp "Position"
+    {
+        "Location" -142.093, -177.419, -23.8
+        "Heading" 0
+        "Pitch" 0
+    	"Bank" 0
+    }
+}

@@ -122,3 +122,7 @@ CreateArch "Misc Metaprops" "Hypo Recycling"
 
 +MetaProp -52 "Hypo Recycling" //Med Hypo
 +MetaProp -57 "Hypo Recycling" //PSI Hypo
++MetaProp -58 "Hypo Recycling" //Speed Booster
++MetaProp -59 "Hypo Recycling" //Strength Booster
++MetaProp -54 "Hypo Recycling" //Rad Patch
++MetaProp -53 "Hypo Recycling" //Detox Patch

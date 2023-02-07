@@ -1,0 +1,11 @@
+//Adds a red serum to the store room
+Create "Red Serum Canister"
+{
+    +ObjProp "Position"
+    {
+        "Location" -100.911, 122.921, 4.70095
+        "Heading" 0
+        "Pitch" 0
+    	"Bank" 0
+    }
+}
