@@ -2,15 +2,6 @@ class sargeHypoRecycler extends SqRootScript
 {
 	stackCount = null;
 
-	//Run Once
-	function OnBeginScript()
-	{
-		if (!GetData("Started"))
-		{
-			SetData("Started",true);
-		}
-	}
-
 	function OnFrobInvBegin()
 	{
 		stackCount = GetProperty("StackCount");
