@@ -1,0 +1,80 @@
+//Update Software
++ObjProp -320 "Scripts"
+{
+	"Script 0" "sargeSoftware"
+	"Script 1" "AutoInstallSoft"
+	"Script 2" "rsdSoftExt" //rsd mod support
+}
+
++ObjProp -320 "FrobInfo"
+{
+	"World Action" "Move"
+	"Inv Action" "Script"
+	"Tool Action" ""
+}
+
+//Add CYB requirements to specific softs
+
+//Hack
++ObjProp -1472 "ReqStatsDesc" //V1
+{
+    "CYB" 2
+}
+
++ObjProp -1123 "ReqStatsDesc" //V2
+{
+    "CYB" 4
+}
+
++ObjProp -1124 "ReqStatsDesc" //V3
+{
+    "CYB" 6
+}
+
+//Repair
++ObjProp -1473 "ReqStatsDesc" //V1
+{
+    "CYB" 2
+}
+
++ObjProp -1121 "ReqStatsDesc" //V2
+{
+    "CYB" 4
+}
+
++ObjProp -1122 "ReqStatsDesc" //V3
+{
+    "CYB" 6
+}
+
+//Modify
++ObjProp -1477 "ReqStatsDesc" //V1
+{
+    "CYB" 2
+}
+
++ObjProp -1110 "ReqStatsDesc" //V2
+{
+    "CYB" 4
+}
+
++ObjProp -1116 "ReqStatsDesc" //V3
+{
+    "CYB" 6
+}
+
+//Research
++ObjProp -1478 "ReqStatsDesc" //V1
+{
+    "CYB" 2
+}
+
++ObjProp -1125 "ReqStatsDesc" //V2
+{
+    "CYB" 4
+}
+
++ObjProp -1126 "ReqStatsDesc" //V3
+{
+    "CYB" 6
+}
