@@ -4,11 +4,10 @@ class sargeReplaceRounds extends SqRootScript
 {
 	function OnSim()
 	{
-		if (!GetData("Setup") && message().starting)
-		{
-			SetData("Setup",TRUE);
+		if (message().starting && Object.HasMetaProperty(self, "Non-Standard Ammo Replacer"))
 			ReplaceAmmo();
-		}
+		
+		Object.RemoveMetaProperty(self, "Non-Standard Ammo Replacer");
 	}
 	
 	function FixLinks(obj,linkType)
