@@ -6,29 +6,18 @@ class sargeReplaceRounds extends SqRootScript
 	{
 		if (!GetData("Setup") && message().starting)
 		{
-			print ("Ammo replace started");
 			SetData("Setup",TRUE);
-			Init();
+			ReplaceAmmo();
 		}
-		else
-		{
-			print ("Not replacing object");
-		}
-	}
-
-	//Run only once per map, not when reloading
-	function Init()
-	{
-		print ("Ammo replace started");
-		ReplaceAmmo();
 	}
 	
-	function OnContained()
+	function FixLinks(obj,linkType)
 	{
-		if (!GetData("Setup"))
-			return;
-
-		print ("contained in " + message().container);
+		foreach (outLink in Link.GetAll(linkkind(linkType),self))
+		{
+			local realLink = sLink(outLink);
+			Link.Create(linkkind(linkType),obj,realLink.dest);
+		}
 	}
 	
 	//Replace with standard bullets
@@ -43,13 +32,17 @@ class sargeReplaceRounds extends SqRootScript
 		
 		local obj = Object.Create(arch);
 		Object.Teleport(obj, Object.Position(self), Object.Facing(self));
-			
+		
+		//Fix contains links
 		foreach (outLink in Link.GetAll(linkkind("~Contains"),self))
 		{
 			local realLink = sLink(outLink);
-			print ("Link found: " + outLink);
 			Container.Add(obj, realLink.dest);
 		}
+		
+		//Randomiser Compatibility
+		FixLinks(obj,"Target");
+		FixLinks(obj,"SwitchLink");
 		
 		//Destroy the source
 		Object.Destroy(self);

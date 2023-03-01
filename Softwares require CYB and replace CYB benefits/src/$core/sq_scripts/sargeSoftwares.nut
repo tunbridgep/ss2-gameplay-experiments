@@ -2,24 +2,23 @@
 class sargeSoftware extends SqRootScript
 {
 	function OnFrobInvEnd()
-	{
+	{	
 		local playerCYB = ShockGame.GetStat("Player",eStats.kStatCyber);
 		local CYBreq = GetProperty("ReqStatsDesc","CYB");
 		
 		if (playerCYB < CYBreq)
 		{
-			BlockMessage(); //Block the Software script from kicking in
 			//print ("Blocking message");
 			ShockGame.AddText(GetStatString("CYB",CYBreq), "Player");
+			BlockMessage();
 		}
 		else
 		{
 			//We have activated a software from inventory, send the message as if it was picked up normally
 			//This allows other mods (like RSD) which add extra functionality to softs when picked up
 			//to work correctly when expecting the item to be picked up, rather than used.
-			SendMessage(self, "FrobWorldBegin");
-			SendMessage(self, "FrobWorldEnd");
-			SendMessage(self, "TakeSoft");
+			PostMessage(self,"FrobWorldBegin");
+			PostMessage(self,"FrobWorldEnd");
 		}
 	}
 	
