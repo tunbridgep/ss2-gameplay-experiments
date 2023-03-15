@@ -4,10 +4,8 @@ class sargeReplaceRounds extends SqRootScript
 {
 	function OnSim()
 	{
-		if (message().starting && Object.HasMetaProperty(self, "Non-Standard Ammo Replacer"))
+		if (message().starting)
 			ReplaceAmmo();
-		
-		Object.RemoveMetaProperty(self, "Non-Standard Ammo Replacer");
 	}
 	
 	function FixLinks(obj,linkType)
@@ -42,6 +40,10 @@ class sargeReplaceRounds extends SqRootScript
 		//Randomiser Compatibility
 		FixLinks(obj,"Target");
 		FixLinks(obj,"SwitchLink");
+		FixLinks(obj,"~SwitchLink");
+		
+		//Remove MetaProp from new object so it doesn't change on map load
+		Object.RemoveMetaProperty(obj, "Non-Standard Ammo Replacer");
 		
 		//Destroy the source
 		Object.Destroy(self);
