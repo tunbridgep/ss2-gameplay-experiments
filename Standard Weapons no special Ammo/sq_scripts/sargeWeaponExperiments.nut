@@ -2,6 +2,8 @@
 // Script for replacing AP and Anti-Pers rounds with standard rounds
 class sargeReplaceRounds extends SqRootScript
 {
+    static REPLACE_CHANCE = 50;
+
 	function OnSim()
 	{
 		if (message().starting)
@@ -20,6 +22,12 @@ class sargeReplaceRounds extends SqRootScript
 	//Replace with standard bullets
 	function ReplaceAmmo()
 	{
+
+        local rand = Data.RandInt(0,100);
+
+        if (rand > REPLACE_CHANCE)
+            return;
+
 		//Create standard bullets
 		local arch = "Standard Clip";
 		
